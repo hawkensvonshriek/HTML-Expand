@@ -1,0 +1,56 @@
+@keyframes rlRotate
+{
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(630deg);}
+	100% {transform: rotate(720deg);}
+}
+
+@keyframes rlOuterPulse
+{
+	0%, 100% {height: 80%; width: 80%; top: 10%; right: 10%; bottom: 10%; left: 10%;}
+	50% {height: 120%; width: 120%; top: -10%; right: -10%; bottom: -10%; left: -10%;}
+}
+
+@keyframes rlInnerPulse
+{
+	0%, 100% {height: 120%; width: 120%; top: -10%; right: -10%; bottom: -10%; left: -10%;}
+	50% {height: 80%; width: 80%; top: 10%; right: 10%; bottom: 10%; left: 10%;}
+}
+
+.roboLoad
+{
+	display: block;
+	position: relative;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	margin-top: 200px;
+}
+
+.roboLoad .outer, .roboLoad .inner
+{
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	right: 0%;
+	bottom: 0%;
+	left: 0%;
+	margin: auto;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 50%;
+}
+
+.roboLoad .outer
+{
+	border-color: red transparent red transparent;
+	animation: rlOuterPulse 1.5s infinite linear, rlRotate 3s infinite linear;
+}
+
+.roboLoad .inner
+{
+	border-color: transparent black transparent black;
+	animation: rlInnerPulse 1.5s infinite linear, rlRotate 3s infinite linear;
+}

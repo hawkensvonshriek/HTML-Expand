@@ -1,0 +1,28 @@
+{
+	"index" : {
+		"-D" : "page"
+	},
+	"page2" : {
+		"-D" : "page",
+		"content" : {
+			"-D" : "content",
+			"inner" : "This content overrides the default."
+		}
+	},
+	"page3" : {
+		"-D" : "page"
+	},
+	"loadingCircles" : {
+		"-D" : "page",
+		"content" : {
+			"-D" : "content",
+			"inner" : {
+				"-f" : "blank",
+				"var" : [
+					{"-f" : "robo-load"},
+					{"-f" : "loading-circle","id" : [1, 2, 3, 4, 5, 6, 7, 8, 9]}
+				]
+			}
+		}
+	}
+}

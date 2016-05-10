@@ -1,0 +1,30 @@
+{
+	"page" : {
+		"-f" : "page",
+		"script" : "-d",
+		"style" : "-d",
+		"nav" : "-d",
+		"content" : "-d"
+	},
+	"style" : {
+		"-f" : "style-link",
+		"href" : ["css/reset.css", "css/main.css", "css/roboLoader.css"]
+	},
+	"script" : {
+		"-f" : "script-link",
+		"src" : "js/somescript.js"
+	}, 
+	"nav" : {
+		"-f" : "nav",
+		"links" : {
+			"-f" : "nav-a",
+			"href" : ["index.html", "page2.html", "page3.html", "loadingCircles.html", "#", "#", "#", "#", "#", "#"],
+			"page" : ["Home", "Page 2", "Page 3", "Loading Circles", "Link 5", "Link 6", "Link 7", "Link 8", "Link 9", "Super long ass holy crap why is this so long link name to test what happens if links are long"]
+		}
+	},
+	"content" : {
+		"-f" : "div",
+		"class" : "content",
+		"inner" : ["Some default content", "Some more default content"]
+	}
+}
